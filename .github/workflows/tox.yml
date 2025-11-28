@@ -228,7 +228,7 @@ jobs:
         uses: codecov/codecov-action@v5.5.1
         with:
           name: ${{ matrix.name }}
-          # verbose: true # optional (default = false)
+          verbose: true # optional (default = false)
           fail_ci_if_error: true
           use_oidc: true # cspell:ignore oidc
           files: "*/tests/output/reports/coverage.xml"
